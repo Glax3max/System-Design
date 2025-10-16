@@ -34,5 +34,7 @@ int main() {
 
         // Client client = new Client(parent)
         Client *client =  new Client(child);
+
+        client->printMsg();
     return 0;
 }
