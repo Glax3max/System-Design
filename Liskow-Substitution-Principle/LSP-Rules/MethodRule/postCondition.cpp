@@ -40,6 +40,7 @@ class Car {
             };
     }
 int main() {
-
+    Car c1 = new HyperCar();
+    
     return 0;
 }

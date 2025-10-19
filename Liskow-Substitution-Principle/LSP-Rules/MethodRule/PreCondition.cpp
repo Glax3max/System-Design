@@ -27,6 +27,8 @@ class AdminUser: public User {
 };
  
 int main() {
+    User* user = new AdminUser();
+    user->setPassword("Admin")
 
-
+    return 0;
 }
