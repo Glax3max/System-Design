@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 
 class DocumentEditor{
@@ -14,7 +15,7 @@ class DocumentEditor{
             elements.push_back(path);
             cout<<"Image added successFully"<<endl;
         }
-        void renderDocument() {
+        string renderDocument() {
            if(renderedDocument.empty()) {
                 string result;
                 for(auto element : elements) {
@@ -30,7 +31,7 @@ class DocumentEditor{
         }
 
         void saveToFile() {
-            ofStream file("document.txt");
+            ofstream file("document.txt");
             if(file.is_open()) {
                 file << renderDocument();
                 file.close();
